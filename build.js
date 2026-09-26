@@ -12,3 +12,4 @@ for (const entry of ['index.html', 'style.css', 'app.js', 'assets']) {
   });
 }
 console.log('Static website ready in dist/');
+// 
