@@ -65,6 +65,9 @@ The album viewer keeps the original images and uses `object-fit: contain` so imp
 - Albums open in native `<dialog>` elements with previous/next controls, Escape support, and live captions.
 - The game shuffles eight cards into four pairs. Matched cards stay open, the progress hearts update, and a small heart confetti effect appears after completion.
 - The game has a restart button and respects `prefers-reduced-motion`.
+- Each matched pair reveals a personal, playful confession; collected notes remain visible during the round. Mismatches cycle through gentle jokes without penalties. The awkward selfie is one of the four pairs.
+- A single three-second peek is available per round between turns. Restart resets the peek, notes, and pending timers.
+- Finishing unlocks four next-adventure ideas: coffee, a slow walk, another awkward selfie, or “A goodbye that needs a little less distance…” The fourth choice gently hints at a kiss, with a response that leaves it mutual and optional. Each choice has an affectionate response. The selection is only on the page; it is not sent or saved. The invitation suggests sharing a screenshot.
 - The letter is hidden inside an envelope to create a small reveal moment. The completed game can also lead into the letter.
 - Focus styles are visible and the page includes a skip link.
 
@@ -82,6 +85,7 @@ The letter should remain personal and direct. It speaks about ordinary days, sha
 - `style.css` contains the visual system, responsive rules, paper texture, polaroids, dialogs, game cards, and motion.
 - `app.js` contains albums, dialog behavior, keyboard controls, game logic, progress updates, and confetti.
 - `server.js` is a tiny dependency-free local server.
+- Vercel uses `vercel.json` with the Other preset and `npm run build`. `build.js` generates `dist/` containing only the HTML, CSS, client JavaScript, and assets. The local server and documentation are not published. No server functions or environment variables are required.
 - `assets/Swati/` contains the original photographs organized by memory folder.
 - `.gitignore` excludes dependencies, local environment files, logs, temporary files, browser artifacts, and OS/editor clutter.
 
