@@ -1,0 +1,29 @@
+# Dependencies and build output
+node_modules/
+dist/
+build/
+coverage/
+
+# Local environment files (keep shareable examples)
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# Logs and temporary files
+*.log
+npm-debug.log*
+.cache/
+*.tmp
+*.swp
+*~
+
+# Browser test artifacts
+playwright-report/
+test-results/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
