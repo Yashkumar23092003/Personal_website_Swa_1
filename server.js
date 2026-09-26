@@ -10,7 +10,7 @@ http.createServer(async (req, res) => {
     const pathname = decodeURIComponent(new URL(req.url, 'http://localhost').pathname);
     const file = path.resolve(root, '.' + (pathname === '/' ? '/index.html' : pathname));
     const relative = path.relative(root, file);
-    if (relative.startsWith('..') || relative.split(path.sep).some(p => p.startsWith('.')) || !['index.html', 'style.css', 'app.js', 'catch.js', 'favicon.svg', 'favicon.ico', 'apple-touch-icon.png'].includes(relative) && !relative.startsWith('assets' + path.sep)) {
+    if (relative.startsWith('..') || relative.split(path.sep).some(p => p.startsWith('.')) || !['index.html', 'style.css', 'app.js', 'catch.js', 'birthday-gate.js', 'favicon.svg', 'favicon.ico', 'apple-touch-icon.png'].includes(relative) && !relative.startsWith('assets' + path.sep)) {
       res.writeHead(403).end('Forbidden'); return;
     }
     const body = await readFile(file);
