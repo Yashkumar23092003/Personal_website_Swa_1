@@ -7,4 +7,50 @@
 @media(max-width:760px){.blooper{grid-template-columns:1fr;gap:30px;padding:30px 22px;margin-top:48px}.blooper-photo{max-width:340px;margin:auto}.blooper-copy h3{font-size:32px}.blooper-copy>.handwritten{font-size:21px}.blooper .tape{left:calc(50% - 60px)}}
 .game-section{align-items:start}.game-board-wrap{min-width:0}.game-actions{display:flex;gap:25px;flex-wrap:wrap}.text-button:disabled{opacity:.5;cursor:default}.game-copy>p.peek-help{margin-top:8px;font-size:10px}.game-reaction{display:flex;gap:12px;align-items:center;min-height:105px;margin-top:20px;padding:18px 20px;background:#f0e5df;border:1px dashed #d8c4bd;border-radius:3px}.game-reaction>span{font-size:28px;color:var(--rose)}.game-reaction p{font-family:var(--hand);font-size:23px;line-height:1.35;color:var(--rose)}.confession-collection{margin-top:28px}.confession-collection ul{list-style:none;padding:0;margin:12px 0 0}.confession-collection li{padding:10px 0 10px 20px;border-bottom:1px solid var(--line);font-size:12px;color:var(--muted);position:relative;line-height:1.8}.confession-collection li:before{content:'♡';position:absolute;left:0;color:var(--rose)}.adventure-options{display:grid;gap:10px;margin-top:23px}.adventure-options button{background:#f0e5df;padding:13px 16px;border:1px solid #decec5;border-radius:3px;text-align:left;font-size:12px;line-height:1.6}.adventure-options button:hover{border-color:var(--rose)}.adventure-options button[aria-pressed=true]{background:var(--rose);border-color:var(--rose);color:var(--paper)}.reward-dialog>p.adventure-footnote{font-size:10px;color:var(--muted);margin-top:14px}.reward-dialog #adventure-note{font-size:24px;min-height:62px}
 @media(max-width:760px){.game-reaction{padding:15px;min-height:110px}.game-reaction p{font-size:22px}.game-note{font-size:20px}}
+.letter-dialog>p.krishna-note:not(.eyebrow):not(.signature){font-family:var(--hand);font-size:24px;line-height:1.5;color:var(--rose);background:#eee0df66;border-left:2px solid #b7808b;padding:16px 18px;margin-top:26px;border-radius:0 4px 4px 0}
+.krishna-note span{display:block;margin-top:12px}
+@media(max-width:760px){.letter-dialog>p.krishna-note:not(.eyebrow):not(.signature){font-size:22px;padding:14px}}
+.catch-section{background:#f0e9e1;border-top:1px solid var(--line)}
+.catch-layout{display:grid;grid-template-columns:1fr 1.15fr;gap:70px;align-items:center}
+.catch-copy>p:not(.eyebrow){margin-top:24px;color:var(--muted);font-size:13px}
+.catch-copy>p.handwritten{font-size:25px;color:var(--rose)}
+.catch-copy>a{display:inline-block}
+.catch-machine{min-width:0;padding:18px;background:#fffaf1;border:1px solid #d9c6bc;border-radius:8px;box-shadow:5px 5px 0 #dfd1c6}
+.catch-hud{display:flex;justify-content:space-between;gap:12px;padding:0 2px 12px;font-family:monospace;font-size:13px;color:var(--rose)}
+.catch-field{position:relative;height:330px;overflow:hidden;border:2px solid #b68788;border-radius:3px;background-color:#f5e8e5;background-image:linear-gradient(#fff5 1px,transparent 1px),linear-gradient(90deg,#fff5 1px,transparent 1px);background-size:22px 22px;touch-action:none;user-select:none}
+.catch-field:focus-visible{outline:3px solid var(--rose);outline-offset:4px}
+.catch-field:after{content:'';position:absolute;bottom:0;left:0;right:0;height:14px;background:#dbc1b6;border-top:2px solid #bd9691}
+.catch-envelope{position:absolute;bottom:20px;left:50%;transform:translateX(-50%);width:70px;height:46px;background:#fff8e9;border:2px solid #a97078;box-shadow:3px 3px 0 #b7808b33;display:grid;place-items:center;color:var(--rose)}
+.catch-envelope:before{content:'';position:absolute;inset:0;background:#e5c9c2;clip-path:polygon(0 0,100% 0,50% 65%)}
+.catch-envelope span{z-index:1;font-size:19px;margin-top:9px}
+.catch-pixel-heart{display:block;width:24px;height:24px;background:#aa5369;clip-path:polygon(0 17%,17% 17%,17% 0,42% 0,42% 17%,58% 17%,58% 0,83% 0,83% 17%,100% 17%,100% 58%,83% 58%,83% 75%,67% 75%,67% 92%,50% 100%,33% 92%,33% 75%,17% 75%,17% 58%,0 58%)}
+#catch-hearts .catch-pixel-heart{position:absolute;transform:translateX(-50%)}
+.catch-overlay{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;background:#f5e8e5ed;gap:12px}
+.catch-overlay .catch-pixel-heart{width:42px;height:42px;margin-bottom:8px}
+#catch-overlay-title{font-family:var(--serif);font-size:27px;line-height:1.3}
+#catch-overlay-copy{font-size:12px;color:var(--muted)}
+.catch-field[data-state=finished] .catch-overlay{padding:18px}
+.catch-field[data-state=finished] #catch-overlay-title{font-family:var(--hand);font-size:clamp(24px,2.3vw,30px);line-height:1.35;color:var(--rose);max-width:440px}
+.catch-field[data-state=finished] .catch-overlay .catch-pixel-heart{width:28px;height:28px;flex-shrink:0;margin-bottom:4px}
+.catch-controls{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:16px;flex-wrap:wrap}
+.catch-controls .button{min-height:44px;gap:8px;padding:10px 15px}
+.catch-controls .button:disabled{opacity:.55;cursor:default;transform:none}
+.catch-controls .text-button{margin:0;min-height:44px;min-width:60px}
+.catch-help{font-size:10px;color:var(--muted);line-height:1.8;margin-top:14px}
+.catch-note{font-size:24px;line-height:1.4;margin-top:15px;min-height:101px;border-top:1px dashed #d9c6bc;padding-top:15px}
+@media(max-width:1050px){.catch-layout{gap:35px}}
+@media(max-width:760px){.catch-layout{grid-template-columns:1fr;gap:30px}.catch-machine{width:100%;max-width:480px;margin:auto;padding:14px}.catch-field{height:310px}.catch-copy>p:not(.eyebrow){margin-top:18px}.catch-note{font-size:23px}}
+.catch-hud strong{display:inline-block}
+#catch-hearts .catch-pixel-heart{animation:catch-tumble 2.2s ease-in-out infinite}
+.catch-field[data-state=playing] .catch-envelope{animation:catch-bob 2.4s ease-in-out infinite}
+.catch-overlay:not([hidden]){animation:catch-reveal .45s ease-out}
+.catch-overlay .catch-pixel-heart{animation:catch-heartbeat 2.8s ease-in-out infinite}
+.catch-effects{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.catch-spark{position:absolute;bottom:67px;color:var(--rose);font-family:var(--hand);font-size:21px;line-height:1;white-space:nowrap;animation:catch-spark .7s ease-out forwards}
+.catch-field[data-state=paused] #catch-hearts *, .catch-field[data-state=paused] .catch-spark, .catch-field[data-state=paused] .catch-overlay .catch-pixel-heart{animation-play-state:paused}
+@keyframes catch-tumble{0%,100%{transform:translateX(-50%) rotate(-12deg) scale(.94)}50%{transform:translateX(-50%) rotate(12deg) scale(1.04)}}
+@keyframes catch-bob{0%,100%{transform:translateX(-50%) translateY(0) rotate(-1deg)}50%{transform:translateX(-50%) translateY(-3px) rotate(1deg)}}
+@keyframes catch-heartbeat{0%,35%,65%,100%{transform:scale(1)}45%{transform:scale(1.13)}55%{transform:scale(1.04)}}
+@keyframes catch-reveal{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+@keyframes catch-spark{0%{opacity:0;transform:translate(-50%,0) scale(.7)}20%{opacity:1}100%{opacity:0;transform:translate(calc(-50% + var(--drift)),var(--lift)) scale(1)}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
